@@ -1,0 +1,256 @@
+page-login {
+
+.logo{
+    width: 170px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.item{
+    background-color: transparent;
+    padding-left: 0;
+    
+    .input-wrapper{
+        padding-left: 5px;
+        padding-bottom: 5px;
+        padding-right: 5px;
+    }
+}
+.item-md.item-block .item-inner,
+.item-ios.item-block .item-inner{
+    border-bottom: 0;
+    padding-right: 0;
+}
+
+ion-input{
+    border: 1px solid #0b79f8;
+    padding-left: 10px;
+    color: #fff;
+    border-radius: 5px;
+    -webkit-box-shadow: -2px 3px 5px 0px rgba(0,0,0,0.24);
+    -moz-box-shadow: -2px 3px 5px 0px rgba(0,0,0,0.24);
+    box-shadow: -2px 3px 5px 0px rgba(0,0,0,0.24);
+    margin-bottom: 10px;
+    padding-right: 30px;
+    background-color: rgba(255,255,255,0.1);
+
+// -webkit-box-shadow: -13px 28px 5px 0px rgba(129,154,120,1);
+// -moz-box-shadow: -13px 28px 5px 0px rgba(129,154,120,1);
+// box-shadow: -13px 28px 5px 0px rgba(129,154,120,1);
+
+}
+.label-md[stacked],
+.label-ios[stacked]{
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'OpenSansRegular';
+    font-size: 13px;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 5px;
+}
+.item-input-has-focus .label-md[stacked], 
+.input-has-focus .label-md[stacked]{
+    color: #fff;
+}
+.item-md.item-input.item-input-has-focus .item-inner, 
+.item-md.item-input.input-has-focus .item-inner{
+    border-bottom: 0;
+    box-shadow: none;
+}
+.item.item .checkbox{
+margin: 0;
+margin-right: 6px;
+}
+.checkbox .checkbox-icon{
+    border-color:#fff;
+    background-color: transparent;
+    border-width: 1px;
+    border-radius: 5px;
+}
+.check_Box{
+    padding-top: 15px;
+    padding-bottom: 10px;
+   .item{
+       min-height: 0;
+   }
+    ion-label{
+        color: #ffffff;
+        font-family: 'OpenSansSemiBold';
+        font-size: 13px;
+        margin: 0;
+    }
+    .input-wrapper{
+        padding: 0;
+    }
+}
+
+.loginFrmSection{
+    padding-top: 15px;
+    h4{
+        color: #fff;
+        font-family: 'Conv_Quicksand-Regular';
+        font-size: 18px;
+        padding-left: 5px;
+    }
+    .blackTxt{
+        display: inline-block;
+        color: #000000;
+    }
+    .forgotPass{
+        color: #000;
+    }
+    .newTo{
+        text-align: center;
+        color: #fff;
+        font-family: 'OpenSansSemiBold';
+        font-size: 13px;
+        margin: 0;
+        margin-bottom: 8px;
+
+    }
+    .bottomSection{
+        display: flex;
+        display: -webkit-flex;
+        justify-content: space-around;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        span{
+            display: inline-block;
+            color: #fff;
+            font-size: 13px;
+            font-family: 'OpenSansSemiBold';
+        }
+    }
+}
+
+.inputBottomSection{
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 10px;
+}
+
+
+.inputBox{
+    .item{
+        position: relative;
+    }
+   
+    .userIcon{
+        position: absolute;
+        margin: 0;
+        top: 32px;
+        right: 18px;
+        width: 13px;
+        height: 18px;
+        background-image: url(../assets/imgs/userIcon.png);
+        background-size: cover;
+    }
+    .passwordIcon{
+        position: absolute;
+        margin: 0;
+        top: 32px;
+        right: 18px;
+        width: 13px;
+        height: 18px;
+        background-image: url(../assets/imgs/passIcon.png);
+        background-size: cover;
+    }
+}
+
+.item-input ion-label{
+    pointer-events: painted;
+    position: relative;
+    z-index: 999;
+}
+
+
+
+
+
+@media(min-width:768px){
+     .logo{
+        width: 385px;
+    }
+     .label-md[stacked], 
+     .label-ios[stacked]{
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+    .loginFrmSection{
+        padding-top: 60px;
+        padding-left: 70px;
+        padding-right: 70px;
+        h4{
+            font-size: 36px;
+            margin-bottom: 25px;
+        }
+        .newTo{
+            font-size: 22px;
+            margin-bottom: 24px;
+        }
+        .bottomSection{
+            padding-top: 40px;
+            span{
+                font-size: 22px;
+            }
+        }
+    }
+    ion-input{
+        padding-left: 20px;
+        padding-right: 70px;
+        .text-input{
+            height: 73px;
+            font-size: 26px;
+        }
+    }
+    .check_Box ion-label{
+        font-size: 20px;
+    }
+    .inputBox{
+        .item{
+            margin-bottom: 12px;
+        }
+    }
+    
+    .inputBottomSection{
+        padding-top: 30px;
+    }
+    .check_Box {
+        padding-top: 35px;
+        padding-bottom: 22px;
+    }
+    .checkbox .checkbox-icon{
+        width: 26px;
+        height: 26px;
+    }
+    .checkbox .checkbox-checked .checkbox-inner {
+        left: 9px;
+        top: 4px;
+        width: 6px;
+        height: 14px;
+        border-width: 2px;
+        border-top-width: 0;
+        border-left-width: 0;
+    }
+
+
+    .inputBox{
+        .userIcon{
+            top: 68px;
+            right: 45px;
+            width: 19px;
+            height: 25px;
+        }
+        .passwordIcon{
+            top: 68px;
+            right: 45px;
+            width: 21px;
+            height: 29px;
+        }
+    }
+    
+}
+
+}

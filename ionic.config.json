@@ -1,0 +1,7 @@
+{
+  "name": "myTeamWerks",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

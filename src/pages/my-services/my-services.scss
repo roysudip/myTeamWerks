@@ -1,0 +1,154 @@
+page-my-services {
+	.parentSarBlock {
+		border: 1px solid #d5d5d5;
+		box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+		-webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+		-moz-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		-ms-border-radius: 5px;
+		-o-border-radius: 5px;
+		border-radius: 5px;
+		margin-bottom: 15px;
+
+		.grayBlock {
+			background-color: #ebebeb;
+			padding: 15px 10px;
+			-webkit-border-radius: 5px 5px 0 0;
+			-moz-border-radius: 5px 5px 0 0;
+			-ms-border-radius: 5px 5px 0 0;
+			-o-border-radius: 5px 5px 0 0;
+			border-radius: 5px 5px 0 0;
+
+			p {
+				font-size: 13px;
+				font-weight: 400;
+				margin: 0;
+				padding-bottom: 5px;
+				color: #000;
+				font-family: 'OpenSansRegular';
+
+				span {
+					font-family: 'OpenSansBold';
+				}
+
+			}
+
+			h4 {
+				margin: 0;
+				color: #021262;
+				font-family: 'OpenSansBold';
+			}
+
+			p.by {
+				color: #636ea4;
+			}
+
+			p.status {
+				color: #ff7800;
+				span {
+					font-family: 'OpenSansBold';
+					color:#000;
+				}
+			}
+
+		}
+
+		.whiteBlock {
+			padding: 15px 10px;
+		}
+
+	}
+
+	.vcb {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		button {
+			width: auto;
+			
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+
+	}
+
+	.rowD {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 10px;
+	}
+
+	.pricing {
+		font-family: 'OpenSansRegular';
+		color: #282828;
+		font-size: 13px;
+		margin: 0;
+		margin-bottom: 5px;
+
+		span {
+			font-family: 'OpenSansBold';
+			font-size: 18px;
+			color: #021262;
+		}
+
+	}
+
+	@media(min-width:768px) {
+		.parentSarBlock {
+			-webkit-border-radius: 10px;
+			-moz-border-radius: 10px;
+			-ms-border-radius: 10px;
+			-o-border-radius: 10px;
+			border-radius: 10px;
+			margin-bottom: 45px;
+		.grayBlock {
+			-webkit-border-radius: 10px 10px 0 0;
+			-moz-border-radius: 10px 10px 0 0;
+			-ms-border-radius: 10px 10px 0 0;
+			-o-border-radius: 10px 10px 0 0;
+			border-radius: 10px 10px 0 0;
+			padding: 30px 30px;
+			margin-bottom: 30px;
+
+			.left {
+				padding-right: 30px;
+			}
+
+			p {
+				font-size: 24px;
+				padding-bottom: 10px;
+			}
+
+			h4 {
+				font-size: 38px;
+			}
+
+		}
+		.whiteBlock {
+			padding: 30px 30px;
+p {
+				font-size: 24px;
+				padding-bottom: 10px;
+
+				span{font-size: 38px;}
+			}
+
+
+		}
+	}
+
+	.vcb {
+		
+		button {
+			
+			padding-left: 50px;
+			padding-right: 50px;
+		}
+
+	}
+
+	}
+
+}

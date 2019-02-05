@@ -1,0 +1,204 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>My Earnings</ion-title>
+    <span class="nitification_icon" (click)="notification()"></span>
+
+  </ion-navbar>
+
+</ion-header>
+
+
+<!-- <ion-content padding>
+	
+	<div class="darkBox">
+		<p class="t_p_m">Total Payments </p>
+		<h1 class="amount">$400 </h1>
+		<p class="t_d">Till 27 Jan 2018 </p>                                  
+	</div>
+
+  <div class="sarBlock">
+  	<div class="rowD">
+  		<div class="status">Status: Completed</div>
+  		<div class="posted">Posted: 29 Jan 2018</div>
+  	</div>
+    <div class="left">
+      <p><span>What:</span> Hold Open House</p>
+      <p><span>Where:</span> 123 Maple Street, Plymouth</p>
+      <div class="rowD">
+      	<div class="leftDiv"><p><span>Event Date::</span> 31 Jan 2018</p></div>
+      	<div class="rightDiv"><p>Compensation: $100</p></div>
+      </div>
+    
+    </div>
+  </div>
+
+  <div class="sarBlock">
+  	<div class="rowD">
+  		<div class="status">Status: Completed</div>
+  		<div class="posted">Posted: 29 Jan 2018</div>
+  	</div>
+    <div class="left">
+      <p><span>What:</span> Hold Open House</p>
+      <p><span>Where:</span> 123 Maple Street, Plymouth</p>
+      <div class="rowD">
+        <div class="leftDiv"><p><span>Event Date::</span> 31 Jan 2018</p></div>
+      	<div class="rightDiv"><p>Compensation: $100</p></div>
+      </div>
+ 
+    </div>
+  </div>
+
+  <button class="greenBtn">send copy to my email address</button>
+
+</ion-content> -->
+
+
+
+<ion-content>
+  <div class="wrapper">
+    <div class="segment-tabs">
+       <ion-segment [(ngModel)]="payment_tab">
+       <ion-segment-button value="PaymentMade" class="icon1">
+          Payment Made
+       </ion-segment-button>
+       <ion-segment-button value="paymentReceived"  class="icon3">
+        payment Received
+       </ion-segment-button>
+       </ion-segment>
+    </div>
+    <div [ngSwitch]="payment_tab">
+       <ion-list class="PaymentMade" *ngSwitchCase="'PaymentMade'">
+        <div class="darkBox">
+          <p class="t_p_m">Total Payments Made</p>
+          <h1 class="amount">$400 </h1>
+          <p class="t_d">Till 27 Jan 2018 </p>                                  
+        </div>
+      
+        <div class="sarBlock">
+          <div class="rowD">
+            <div>
+                <div class="status">Status:  <span> Completed</span></div>
+                <div class="posted">Posted: 29 Jan 2018</div>
+            </div>
+            <div class="rightDiv"><p>Compensation:<span> $100</span></p></div>
+            
+          </div>
+          <div class="left">
+            <p><span>What:</span> Hold Open House</p>
+            <p><span>Where:</span> 123 Maple Street, Plymouth</p>
+            <div class="rowD">
+              <div class="leftDiv"><p><span>Visited On:</span> 31 Jan 2018</p></div>
+             
+            </div>
+            
+            <p>Paid On: 15 Feb 2018</p>
+            <p>Assisting Agent: John Doe</p>
+          </div>
+        </div>
+      
+        <div class="sarBlock">
+          <div class="rowD">
+            <div>
+                <div class="status">Status: <span> Completed</span></div>
+                <div class="posted">Posted: 2 Feb 2018</div>
+            </div>
+            <div class="rightDiv"><p>Compensation:<span> $300</span></p></div>
+           
+          </div>
+          <div class="left">
+            <p><span>What:</span> Luxury House Booking</p>
+            <p><span>Where:</span>45 Main Street, Plymouth</p>
+            <div class="rowD">
+              <div class="leftDiv"><p><span>Visited On:</span> 25 Fab 2018</p></div>
+              
+            </div>
+            
+            <p>Paid On: 15 Feb 2018</p>
+            <p>Assisting Agent: Jon Redford</p>
+          </div>
+        </div>
+        <div class="sarBlock">
+          <div class="rowD">
+            <div>
+                <div class="status">Status: <span> Completed</span></div>
+                <div class="posted">Posted: 5 Jan 2018</div>
+            </div>
+            <div class="rightDiv"><p>Compensation:<span> $100</span></p></div>
+           
+          </div>
+          <div class="left">
+            <p><span>What:</span> Visiting To a Luxury Place</p>
+            <p><span>Where:</span> 9786 E. Pleasant Court,Oak Ridge</p>
+            <div class="rowD">
+              <div class="leftDiv"><p><span>Visited On:</span> 28 Fab 2017</p></div>
+              
+            </div>
+            
+            <p>Paid On: 10 Feb 2018</p>
+            <p>Assisting Agent: Bill Smith</p>
+          </div>
+        </div>
+     
+      
+       </ion-list>
+       <ion-list class="PaymentMade" *ngSwitchCase="'paymentReceived'">
+          
+         
+        <div class="darkBox">
+          <p class="t_p_m">Total Payments </p>
+          <h1 class="amount">$400 </h1>
+          <p class="t_d">Till 27 Jan 2018 </p>                                  
+        </div>
+      
+        <div class="sarBlock">
+          <div class="rowD">
+            <div>
+                <div class="status">Status:<span> Completed</span></div>
+            <div class="posted">Posted: 25 Jan 2018</div>
+            </div>
+            <div class="rightDiv"><p>Compensation: <span>$250</span> </p></div>
+            
+          </div>
+          <div class="left">
+            <p><span>What:</span> Property Checking</p>
+            <p><span>Where:</span> 58 Market Street , Des Plaines</p>
+            <div class="rowD">
+              <div class="leftDiv"><p><span>Event Date::</span> 20 Fab 2018</p></div>
+             
+            </div>
+          
+          </div>
+        </div>
+      
+        <div class="sarBlock">
+          <div class="rowD">
+            <div>
+                <div class="status">Status: <span>Completed</span></div>
+                <div class="posted">Posted: 27 Jan 2018</div>
+            </div>
+            <div class="rightDiv"><p>Compensation:<span> $100</span></p></div>
+           
+          </div>
+          <div class="left">
+            <p><span>What:</span> Hold Open House</p>
+            <p><span>Where:</span> 123 Maple Street, Plymouth</p>
+            <div class="rowD">
+              <div class="leftDiv"><p><span>Event Date::</span> 31 Jan 2018</p></div>
+              
+            </div>
+       
+          </div>
+        </div>
+      
+        <button class="greenBtn" (click)="dashboardPage()">send copy to my email address</button>
+        
+       </ion-list>
+    </div>
+
+
+ </div>
+</ion-content>
+
+
+

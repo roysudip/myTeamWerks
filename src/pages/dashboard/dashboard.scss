@@ -1,0 +1,128 @@
+page-dashboard {
+    .dashBoardUl{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: flex;
+        display: -webkit-flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        li{
+            border: 1px solid #1980ff;
+            width: 48%;
+            padding: 20px 0;
+            margin-bottom: 15px;
+            flex: 0 0 48%;
+            border-radius: 10px;
+            display: flex;
+            display: -webkit-flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+      
+    }
+    .txtDiv{
+        color: #021262;
+        font-family: 'OpenSansSemiBold';
+        font-size: 12px;
+    }
+    .imgDiv{
+        width: 20px;
+        height: 20px;
+        background-size: cover;
+        margin-bottom: 10px;
+    }
+    .reqService{
+        background-image: url(../assets/imgs/reqService.png);
+    }
+    .provideService{
+        background-image: url(../assets/imgs/providerService.png);
+    }
+    .myReq{
+        background-image: url(../assets/imgs/myReq.png);
+    }
+    .myAppontment{
+        background-image: url(../assets/imgs/myAppointment.png);
+        width: 30px;
+    }
+    .message{
+        background-image: url(../assets/imgs/message.png);
+        width: 28px;
+    }
+    .myEarning{
+        background-image: url(../assets/imgs/myEarning.png);
+        width: 24px;
+    }
+    .contactUs{
+        background-image: url(../assets/imgs/contactUs.png);
+        width: 18px;
+    }
+    .aboutUs{
+        background-image: url(../assets/imgs/aboutUs.png);
+        width: 22px;
+    }
+    .relocaTion{
+        background-image: url(../assets/imgs/reLocation.png);
+        width: 32px;
+    }
+    .shareApp{
+        background-image: url(../assets/imgs/shareThisApp.png);
+        width: 22px;
+    }
+
+
+@media(min-width:768px){
+    .dashBoardUl li{
+        padding-top: 61px;
+        padding-bottom: 62px;
+        margin-bottom: 45px;
+    }
+    .imgDiv{
+        margin-bottom: 21px;
+    }
+    .txtDiv{
+        font-size: 24px;
+    }
+    .reqService{
+       width: 47px;
+       height: 47px;
+    }
+    .provideService{
+        width: 54px;
+        height: 54px;
+    }
+    .myReq{
+       width: 46px;
+       height: 46px;
+    }
+    .myAppontment{
+        width: 63px;
+        height: 42px;
+    }
+    .message{
+        width: 47px;
+        height: 34px;
+    }
+    .myEarning{
+       width: 59px;
+       height: 49px;
+    }
+    .contactUs{
+        width: 44px;
+        height: 48px;
+    }
+    .aboutUs{
+      width: 50px;
+      height: 45px;
+    }
+    .relocaTion{
+       width: 63px;
+       height: 39px;
+    }
+    .shareApp{
+       width: 52px;
+       height: 46px;
+    }
+}
+}

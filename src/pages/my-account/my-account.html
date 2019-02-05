@@ -1,0 +1,60 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>My Account</ion-title>
+    <span class="nitification_icon" (click)="notification()"></span>
+
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+      <div class="reqService">
+          <div class="inputBox">
+
+          	<div class="profileH">Edit Profile</div>
+
+          	<div class="profileImageBox">
+          		<div class="profileImg" style="background-image: url(../assets/imgs/profileimg.jpg);">
+          			<button class="changePhotoBtn">Change Photo</button>
+          		</div>
+          	</div>
+
+          	 <ion-item>
+                 <ion-input type="text"  placeholder="Full Name"></ion-input>
+               </ion-item>
+                <ion-item>
+                  <ion-input type="text" placeholder="Email" ></ion-input>
+                </ion-item>
+				<ion-item>
+                  <ion-select [(ngModel)]="gender" class="selectDropdown" placeholder="Gender"> 
+                    <ion-option value="f">Female</ion-option>
+                    <ion-option value="m">Male</ion-option>
+                  </ion-select>
+                </ion-item>
+                 <ion-item>
+                  <ion-input type="text" placeholder="Phone" ></ion-input>
+                </ion-item>
+
+                <ion-item>
+                  <ion-input type="text" placeholder="Mobile Number" ></ion-input>
+                </ion-item>
+
+                <ion-item>
+                  <ion-input type="text" placeholder="Company" ></ion-input>
+                </ion-item>
+
+                <ion-item>
+                  <ion-input type="text" placeholder="Brokerage" ></ion-input>
+                </ion-item>
+
+                <ion-item>
+                  <ion-input type="text" placeholder="Address" ></ion-input>
+                </ion-item>
+                <button class="greenBtn" (click)="dashboardPage()">Save</button>
+	</div>
+</div>
+
+</ion-content>

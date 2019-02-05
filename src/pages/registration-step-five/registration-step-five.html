@@ -1,0 +1,68 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Step-5</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding  class="loginBg">
+    <div class="topSection">
+        <span ></span>
+        <span ></span>
+        <span ></span>
+        <span ></span>
+        <span class="fillClass">5</span>
+      </div>
+  <div class="logo">
+    <img src="assets/imgs/logo.png" alt="">
+  </div>
+
+
+
+  <div class="loginFrmSection">
+    <div class="inputBox">
+        <ion-item>
+           <ion-label  stacked>
+              Additional Brokerage Name
+            </ion-label>
+           <ion-input type="text" placeholder="" [(ngModel)]='User.AddBrokerageName' name="AddBrokerageName"></ion-input>
+         </ion-item>
+
+          <ion-item>
+              <ion-label  stacked>
+                  Brokerage Address
+               </ion-label>
+              <ion-input type="text" placeholder="" [(ngModel)]='User.AddBrokerageAddress' name="AddBrokerageAddress"></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label  stacked>
+                    Brokerage Main Phone Number
+                 </ion-label>
+                <ion-input type="text" placeholder="" [(ngModel)]='User.AddBrokerageMainPhone' name="AddBrokerageMainPhone"></ion-input>
+              </ion-item>
+              <ion-item>
+                  <ion-label  stacked>
+                      Additional Information Box (500 Characters)
+                   </ion-label>
+                  <!-- <ion-input type="text" placeholder=""></ion-input> -->
+                  <ion-textarea placeholder="" [(ngModel)]='User.UserNotes' name="UserNotes"></ion-textarea>
+                </ion-item>
+
+    </div>
+    <div class="inputBottomSection">
+        <button class="registerBtn" (click)="FinalRegister()">Create myteamwerks account</button>
+
+        <div class="bottom_Text">
+            <p>By creating an account you agree to </p>
+            <p>MyTeamWerks Conditions of Use and Privacy Notice</p>
+          </div>
+
+    </div>
+
+
+
+  </div>
+</ion-content>

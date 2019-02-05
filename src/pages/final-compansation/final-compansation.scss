@@ -1,0 +1,96 @@
+page-final-compansation {
+    .topSection{
+        padding-top: 10px;
+        margin-bottom: 20px;
+
+        .status{
+            display: flex;
+            display: -webkit-flex;
+            font-size: 13px;
+            span{
+                display: inline-block;
+                color: #282828;
+                
+                font-family: 'OpenSansBold';
+                margin-right: 5px;
+            }
+          
+        }
+        .compensation{
+            color: #1a1a1a;
+            font-family: 'OpenSansRegular';
+            margin: 0;
+        }
+    }
+
+    .rowD{
+        background-color: #ebebeb;
+        padding: 10px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        p{
+            color: #021262;
+            font-family: 'OpenSansSemiBold';
+            margin: 0;
+            margin-bottom: 10px;
+        }
+        div{
+            color: #000000;
+            font-family: 'OpenSansSemiBold';
+            font-size: 20px;
+
+        }
+		.item{
+            background-color: transparent;
+            padding-left: 0;
+            
+           
+        }
+        .item-md.item-block .item-inner,
+        .item-ios.item-block .item-inner{
+            border-bottom: 0;
+            padding-right: 0;
+        }
+
+        .text-input{
+            margin: 0;
+            height: 37px;
+            background-color: #ffffff;
+            width: 100%;
+            border-radius: 5px;
+            font-size: 13px;
+            padding-left: 10px;
+            font-family: 'OpenSansRegular';
+            margin-bottom: 10px;
+        }
+
+    }
+    
+
+
+
+    @media(min-width:768px){
+        .topSection{
+            margin-bottom: 40px;
+            .status{
+                font-size: 24px;
+                margin-bottom: 8px;
+            }
+        } 
+        .rowD{
+            padding: 47px 40px;
+            margin-bottom: 45px;
+            p{
+                font-size: 30px;
+            }
+            div{
+                font-size: 36px;
+            }
+            .text-input{
+                height: 76px;
+                font-size: 22px;
+                padding-left: 20px;
+            }
+        }
+    }
+}

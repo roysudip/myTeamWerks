@@ -1,0 +1,77 @@
+ <ion-header>
+
+  <ion-navbar>
+    <ion-title>Step-1</ion-title>
+  </ion-navbar>
+
+</ion-header>
+<ion-content padding  class="loginBg">
+    <div class="topSection">
+        <span class="fillClass">1</span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+  <div class="logo">
+    <img src="assets/imgs/logo.png" alt="">
+  </div>
+
+
+
+  <div class="loginFrmSection">
+    <div class="inputBox">
+        <ion-item>
+           <ion-label  stacked>
+              Your Name
+            </ion-label>
+           <ion-input type="text" placeholder="" [(ngModel)]='User.UserName' name="UserName"></ion-input>
+           <ion-label class="userIcon"> </ion-label>
+         </ion-item>
+         <ion-item>
+            <ion-label  stacked>
+                Email
+             </ion-label>
+            <ion-input type="email" placeholder="" [(ngModel)]='User.UserEmail' name="UserEmail"></ion-input>
+            <ion-label class="magIcon"> </ion-label>
+          </ion-item>
+
+         <ion-item>
+            <ion-label  stacked>
+              <div>Password</div>
+              <div class="forgotPass">Password must be at least 8 characters</div>
+            </ion-label>
+            <ion-input type="password" placeholder="" [(ngModel)]='User.UserPassword' name="UserPassword"></ion-input>
+            <ion-label class="passwordIcon"></ion-label>
+          </ion-item>
+
+          <ion-item>
+              <ion-label  stacked>
+                  Confirm Password
+              </ion-label>
+              <ion-input type="password" placeholder="" [(ngModel)]='User.UserConfirmPassword' name="UserConfirmPassword"></ion-input>
+              <ion-label class="passwordIcon"></ion-label>
+            </ion-item>
+    </div>
+    <div class="inputBottomSection">
+        <button class="greenBtn" (click)="registrationPage2()">Continue</button>
+        <!-- <div  class="check_Box">
+            <ion-item>
+                <ion-label>Keep me signed in. </ion-label>
+                <ion-checkbox [(ngModel)]="pepperoni"></ion-checkbox>
+              </ion-item>
+        </div> -->
+
+
+          <p class="newTo">Already have an account?</p>
+          <button class="orangeBtn" (click)="login()">Login</button>
+          <div class="bottomSection">
+              <span>Conditions of Use </span>
+              <span>Privacy Notice</span>
+              <span>Help</span>
+            </div>
+    </div>
+
+
+  </div>
+</ion-content>

@@ -1,0 +1,105 @@
+page-how-it-works {
+    .item{
+        padding-left: 0;
+    }
+    .list > .item-block:first-child{
+        border-top: 0;
+    }
+    .item.item-block .item-inner{
+        padding-right: 0;
+    }
+    ion-label{
+        border: 1px solid #d4d4d4 !important;
+        font-family: 'Avenir-Medium';
+        text-align: center;
+        color: #020202;
+    }
+    .list,.label{
+        margin-bottom: 0;
+        margin-right: 0;
+    }
+    .label h3{
+        font-size: 16px;
+        padding: 8px 0;
+        background-color: #ebebeb;
+        color: #636ea4;
+        text-align: left;
+        padding-left: 10px;
+        margin-bottom: 0;
+        font-family: 'OpenSansSemiBold';
+    }
+    .accordianBd{
+        border: 1px solid #d4d4d4;
+        padding: 15px;
+        background-color: #ebebeb;
+        
+    }
+    .ion-md-arrow-dropright:before,
+    .ion-ios-arrow-dropright:before{
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 17px;
+        background-image: url(../assets/imgs/accordianArrow.png);
+        right: 13px;
+        top: 29px;
+        background-repeat: no-repeat;
+        background-size: 21px;
+    }
+    .ion-ios-arrow-dropdown:before,
+    .ion-md-arrow-dropdown:before {
+        content: " ";
+        position: absolute;
+        width: 20px;
+        height: 17px;
+        background-image: url(../assets/imgs/arrrow2.png);
+        right: 13px;
+        top: 29px;
+        background-repeat: no-repeat;
+        background-size: 21px;
+    }
+    .accordianBd p{
+        font-size: 14px;
+        color: #1a1a1a;
+        font-family: 'OpenSansRegular';
+        text-align: justify;
+        margin: 0;
+    }
+    @media (min-width: 768px){
+     .label h3 {
+        font-size: 26px;
+        padding:20px 30px;
+    }
+     .accordianBd p{
+        font-size: 24px;
+    }
+     .ion-md-arrow-dropright:before,
+     .ion-ios-arrow-dropright:before {
+        width: 28px;
+        height: 15px;
+        background-size: 29px;
+        right: 48px;
+        top: 41px;
+    }
+     .ion-ios-arrow-dropdown:before,
+     .ion-md-arrow-dropdown:before {
+        width: 28px;
+        height: 15px;
+        background-size: 29px;
+        right: 48px;
+        top: 41px;
+    }
+    .accordiAn{
+        // margin-top: 50px;
+    }
+    .viderWrapper{
+        margin-top: 36px;
+    }
+     .accordianBd{
+        padding: 30px;
+    }
+    .list{
+        margin-bottom: 20px;
+    }
+}
+}

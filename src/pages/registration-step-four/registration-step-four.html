@@ -1,0 +1,84 @@
+ <ion-header>
+
+  <ion-navbar>
+    <ion-title>Step-4</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding  class="loginBg">
+    <div class="topSection">
+        <span ></span>
+        <span ></span>
+        <span ></span>
+        <span class="fillClass">4</span>
+        <span></span>
+      </div>
+  <div class="logo">
+    <img src="assets/imgs/logo.png" alt="">
+  </div>
+
+
+
+  <div class="loginFrmSection">
+    <div class="inputBox">
+        <div class="cs-com-Srch">
+           <ion-label  stacked>
+              Brokerage Name
+            </ion-label>
+
+           <ion-searchbar (change)='onChangeTime($event.target.value)' placeholder="" (ionInput)="SearchCompany($event)" [(ngModel)]='User.BrokerageName' name="BrokerageName"></ion-searchbar>
+         </div>
+
+
+         <ion-list id="myInputautocomplete-list" class="autocomplete-items" *ngIf='DisplaySearchList'>
+             <ion-item *ngFor="let item of BrokerCompanyList" (click)='BrokarageSelect(item)'>
+                 {{item.BrokerageName}}
+             </ion-item>
+         </ion-list>
+
+         <ion-item>
+            <ion-label  stacked>
+                Brokerage Address
+             </ion-label>
+            <!-- <ion-input type="text" placeholder=""></ion-input> -->
+            <ion-textarea placeholder="" [(ngModel)]='User.BrokerageAddress' name="BrokerageAddress"></ion-textarea>
+          </ion-item>
+          <ion-item>
+              <ion-label  stacked>
+                  Brokerage Main Phone Number
+               </ion-label>
+              <ion-input type="number" placeholder="" [(ngModel)]='User.BrokerageMainPhone' name="BrokerageMainPhone"></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label  stacked>
+                    Licensed in State
+                 </ion-label>
+                 <ion-select  class="selectDropdown" [(ngModel)]='User.BrokerageLicensedState' name="BrokerageLicensedState">
+                    <ion-option *ngFor="let LicencedState of LicencedStateList" value="{{LicencedState._id}}">{{LicencedState.name}}</ion-option>
+                  </ion-select>
+              </ion-item>
+              <ion-item>
+                  <ion-label  stacked>
+                      Your State License Number
+                   </ion-label>
+                  <ion-input type="text" placeholder="" [(ngModel)]='User.BrokerageLicensedStateNumber' name="BrokerageLicensedStateNumber"></ion-input>
+                </ion-item>
+          <ion-item>
+              <ion-label stacked>  License Expires</ion-label>
+              <ion-select  class="selectDropdown" [(ngModel)]='User.BrokerageLicenseExpire' name="BrokerageLicenseExpire">
+                  <ion-option *ngFor="let Year of YearList" value="{{Year}}">{{Year}}</ion-option>
+              </ion-select>
+            </ion-item>
+
+    </div>
+    <div class="inputBottomSection">
+        <button class="greenBtn" (click)="registrationPage5()">Continue</button>
+
+    </div>
+
+
+  </div>
+</ion-content>

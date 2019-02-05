@@ -1,0 +1,69 @@
+ <ion-header>
+  <ion-navbar>
+    <ion-title>Step-2</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding  class="loginBg">
+    <div class="topSection">
+        <span ></span>
+        <span class="fillClass">2</span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+  <div class="logo">
+    <img src="assets/imgs/logo.png" alt="">
+  </div>
+
+
+
+  <div class="loginFrmSection">
+    <div class="inputBox">
+
+
+         <div class="uploadImg">
+            <ion-label  stacked>
+                Your Photo (Upload here)
+              </ion-label>
+           <div class="uploadImgInner">
+              <div class="lftTxt">Drop files to upload or</div>
+              <button (click)='imageUpload()'>Browse</button>
+              <div class="img-view-box" *ngIf='ViewRawImg!=""'>{{ViewRawImg}}
+           <img [src]="domSanitizer.bypassSecurityTrustUrl(ViewRawImg)" width="50" height='50'>
+            </div>
+           </div>
+         </div>
+
+
+         <ion-item>
+            <ion-label stacked>Sex</ion-label>
+            <ion-select  class="selectDropdown" [(ngModel)]='User.UserGender' name="UserGender">
+              <ion-option value="female">Female</ion-option>
+              <ion-option value="male">Male</ion-option>
+            </ion-select>
+          </ion-item>
+
+
+
+
+         <ion-item>
+            <ion-label  stacked>
+                Phone Number
+             </ion-label>
+            <ion-input type="number" placeholder="" [(ngModel)]='User.UserPhone' name="UserPhone"></ion-input>
+            <ion-label class="phoneIcon"> </ion-label>
+          </ion-item>
+
+
+    </div>
+    <div class="inputBottomSection">
+        <button class="greenBtn" (click)="registrationPage3()">Continue</button>
+
+    </div>
+
+
+  </div>
+</ion-content>

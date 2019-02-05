@@ -1,0 +1,76 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Service Assistance Requests </ion-title>
+    <span class="nitification_icon" (click)="notification()"></span>
+
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <div class="sarBlockWrapper">
+      <div class="sarBlock">
+          <div class="left">
+            <p><span>What:</span> Hold Open House</p>
+            <p><span>Where:</span> 123 Maple Street, Plymouth</p>
+            <p><span>When:</span> 31 Jan 2018</p>
+            <p class="by">By: Peter Redford </p>
+            <p>Posted: 12 Jan 2017</p>
+          </div>
+          <div class="right">
+            <p>Compensation</p>
+            <p>Offered :</p>
+            <h4>$100</h4> 
+          </div>
+        </div>
+        <div class="btnSection">
+        <button class="greenBtn" (click)='serviceAssistanceRequestDetails5Page()'>View Detail</button>
+        <button class="greenBtn" (click)='OfferedPricePage()'>Apply</button>
+
+        </div>
+  </div>
+
+  <div class="sarBlockWrapper">
+      <div class="sarBlock">
+          <div class="left">
+            <p><span>What:</span> Luxury House Booking</p>
+            <p><span>Where:</span> 45 Main Street, Plymouth</p>
+            <p><span>When:</span> 2 Feb 2018</p>
+            <p class="by">By: Jon Redford </p>
+            <p>Posted: 12 March 2017</p>
+          </div>
+          <div class="right">
+            <p>Compensation</p>
+            <p>Offered :</p>
+            <h4>$200</h4>
+          </div>
+        </div>
+        <div class="btnSection">
+            <button class="greenBtn" (click)='serviceAssistanceRequestDetail6Page()'>View Detail</button>
+       
+        <p class="appliedTxt">Applied</p>
+
+    
+            </div>
+  </div>
+  <!-- <div class="sarBlockWrapper">
+      <div class="sarBlock">
+          <div class="left">
+            <p><span>What:</span>Property Checking</p>
+            <p><span>Where:</span> 58 Market Street , Des Plaines</p>
+            <p><span>When:</span> 31 Jun 2018</p>
+            <p class="by">By: Peter Redford </p>
+            <p>Posted: 25 Aug 2017</p>
+          </div>
+          <div class="right">
+            <p>Compensation</p>
+            <p>Offered :</p>
+            <h4>$300</h4>
+          </div>
+        </div>
+        <div class="btnSection">
+            <button class="greenBtn" (click)='serviceAssistanceRequestDetailsPage()'>View Detail</button>
+    
+            </div>
+  </div> -->
+  <button class="greenBtn" (click)="applyFilter()">apply filter(Optional)</button>
+</ion-content>
+ 

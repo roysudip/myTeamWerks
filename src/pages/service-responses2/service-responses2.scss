@@ -1,0 +1,271 @@
+page-service-responses2 {
+    .parentSarBlock {
+		background-color: #ebebeb;
+		border: 1px solid #d5d5d5;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		-ms-border-radius: 5px;
+		-o-border-radius: 5px;
+		border-radius: 5px;
+		margin-bottom: 15px;
+		padding: 15px 10px;
+
+		.sarBlock {
+			display: flex;
+			-webkit-display: flex;
+
+			.left {
+				width: 65%;
+				flex: 0 0 65%;
+				padding-right: 15px;
+			}
+
+			.right {
+				width: 35%;
+				flex: 0 0 35%;
+			}
+
+			p {
+				font-size: 13px;
+				font-weight: 400;
+				margin: 0;
+				padding-bottom: 5px;
+				color: #000;
+				font-family: 'OpenSansRegular';
+
+				span {
+					font-family: 'OpenSansBold';
+				}
+
+			}
+
+			h4 {
+				margin: 0;
+				color: #021262;
+				font-family: 'OpenSansBold';
+			}
+
+			p.by {
+				color: #636ea4;
+			}
+
+		}
+
+	}
+
+	.vcb {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		button {
+			width: auto;
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+
+	}
+
+	.btnSet {
+		display: flex;
+		justify-content: flex-start;
+
+		div {
+			padding-right: 10px;
+		}
+
+		button {
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+
+	}
+
+	.agentBox {
+		display: flex;
+		background-color: #ebebeb;
+		border: 1px solid #d5d5d5;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		-ms-border-radius: 5px;
+		-o-border-radius: 5px;
+		border-radius: 5px;
+		margin-bottom: 15px;
+		padding: 15px 10px;
+
+		.agentImg {
+			width: 40px;
+			flex: 0 0 40px;
+			height: 40px;
+			margin-right: 10px;
+
+			.profileImg {
+				width: 100%;
+				height: 100%;
+				background-size: cover;
+				background-repeat: no-repeat;
+				display: flex;
+				-webkit-border-radius: 50%;
+				-moz-border-radius: 50%;
+				-ms-border-radius: 50%;
+				-o-border-radius: 50%;
+				border-radius: 50%;
+				overflow: hidden;
+			}
+
+		}
+
+		.agentDetail {
+			width: auto;
+			flex: 1;
+
+			.rowD {
+				display: flex;
+				justify-content: space-between;
+			}
+
+			p {
+				font-size: 13px;
+				margin: 0;
+				padding-bottom: 5px;
+				color: #000;
+			}
+
+			p.name {
+				font-family: 'OpenSansSemiBold';
+			}
+
+			h4 {
+				margin: 0;
+				color: #021262;
+				font-family: 'OpenSansBold';
+			}
+
+			p.cn {
+				font-family: 'OpenSansRegular';
+			}
+
+		}
+
+	}
+
+	.title {
+		font-size: 18px;
+		text-align: center;
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
+
+
+
+	.nitification_icon{
+		top: 17px;
+	}
+
+	@media(min-width:768px) {
+		.parentSarBlock {
+			padding: 30px 40px;
+			.sarBlock {
+				margin-bottom: 40px;
+
+				.left {
+					padding-right: 30px;
+				}
+
+				p {
+					font-size: 24px;
+					padding-bottom: 10px;
+				}
+
+				h4 {
+					font-size: 38px;
+				}
+
+			}
+
+		}
+
+		.viewDetailBtn {
+			font-size: 22px;
+		}
+
+		.btnSet {
+			margin-top: 40px;
+
+			div {
+				padding-right: 30px;
+			}
+
+			button {
+				padding-left: 50px;
+				padding-right: 50px;
+			}
+
+		}
+
+		.vcb {
+			button {
+				padding-left: 50px;
+				padding-right: 50px;
+			}
+
+		}
+
+		.agentBox {
+			-webkit-border-radius: 10px;
+			-moz-border-radius: 10px;
+			-ms-border-radius: 10px;
+			-o-border-radius: 10px;
+			border-radius: 10px;
+			padding: 30px;
+
+			.agentImg {
+				width: 140px;
+				flex: 0 0 140px;
+				height: 140px;
+				margin-right: 20px;
+			}
+
+			.agentDetail {
+				width: auto;
+				flex: 1;
+
+				.rowD {
+					display: flex;
+					justify-content: space-between;
+				}
+
+				p {
+					font-size: 24px;
+					margin: 0;
+					margin-bottom: 15px;
+					color: #000;
+				}
+
+				p.name {
+					font-family: 'OpenSansSemiBold';
+				}
+
+				h4 {
+					margin: 0;
+					font-size: 36px;
+					color: #021262;
+					font-family: 'OpenSansBold';
+				}
+
+				p.cn {
+					font-family: 'OpenSansRegular';
+				}
+
+			}
+
+		}
+
+		.title {
+			font-size: 36px;
+			margin-top: 40px;
+			margin-bottom: 40px;
+		}
+
+	}
+}

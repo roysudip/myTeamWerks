@@ -1,0 +1,61 @@
+<!--
+  Generated template for the PriceNegotiationPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Price Negotiation</ion-title>
+    <span class="nitification_icon" (click)="notification()"></span>
+
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <div class="topVarification">
+        <p>Visiting exquisite apartment, flats & villas in 
+            dubai this winter.</p>
+    </div> 
+
+   
+
+        <div class="rowD">
+            <p>Final Price</p>
+             <div class="price">$200</div>
+             <div class="radioWrapper">
+                <p>Will the price increase?</p>
+                    <div class="radioBtn">
+                        <ion-list radio-group [(ngModel)]="relationship">
+                            <ion-item>
+                              <ion-label>Yes</ion-label>
+                              <ion-radio value="friends" checked></ion-radio>
+                            </ion-item>
+                            <ion-item>
+                              <ion-label>No</ion-label>
+                              <ion-radio value="family"></ion-radio>
+                            </ion-item>
+                          </ion-list>
+                    </div>
+                  
+            </div>
+          </div>
+
+    <div class="rowD">
+        <p>Final Price</p>
+          <ion-item>
+              <ion-input type="number" placeholder=""></ion-input>
+            </ion-item>
+        
+        
+    
+      </div>
+
+
+
+      <button class="greenBtn">Complete</button>
+
+</ion-content>

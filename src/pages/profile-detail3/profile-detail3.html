@@ -1,0 +1,150 @@
+<!--
+  Generated template for the ProfileDetail3Page page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Profile Detail</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+    <div class="agenDetail">
+      
+      <div class="profileImageBox">
+            <div class="profileImg" style="background-image: url(../assets/imgs/profileimg.jpg);"></div>
+      </div>
+      <div class="rating">
+          <span><img src="../assets/imgs/full-red.png" alt=""></span>
+          <span><img src="../assets/imgs/full-red.png" alt=""></span>
+          <span><img src="../assets/imgs/full-red.png" alt=""></span>
+          <span><img src="../assets/imgs/full-red.png" alt=""></span>
+          <span><img src="../assets/imgs/full-gray.png" alt=""></span>
+        </div>
+      <h4 class="name">Bill Smith</h4>
+      <h3 class="cn">Magic Bricks Pvt Ltd</h3>
+     
+      <div class="since">Member Since: Feb 2016</div>
+      
+     <div class="phone_email">
+       <div class="email"><span><img src="assets/imgs/msgIcon2.png" alt=""></span> peter@gmail.com</div>
+       <div class="phone"><span><img src="assets/imgs/phoneIcon2.png" alt=""></span> 9876543212</div>
+     </div>
+  
+     <div class="vcb">
+       <button class="greenBtn" (click)="messagePage()">Message</button>
+     </div>
+    </div>
+  
+  
+    <div class="segment-tabs">
+      <ion-toolbar no-border-top>
+        <ion-segment [(ngModel)]="profile">
+          <ion-segment-button value="myservices" class="icon1">
+            My Services
+          </ion-segment-button>
+          <ion-segment-button value="myrequests" class="icon2">
+            My Requests
+          </ion-segment-button>
+        </ion-segment>
+      </ion-toolbar>
+    </div>
+    <div [ngSwitch]="profile" class="segment-content">
+      <ion-list *ngSwitchCase="'myservices'">
+        <ion-item>
+          <div class="sarBlock">
+            <div class="rowD">
+              <div class="left">
+                <p><span>Status:</span> <span class="c_orange">Completed</span></p>
+                <p>Posted: 17 Jan 2017</p>
+              </div>
+              <div class="right">
+                <p>Compensation :</p>
+                <h4>$100</h4>
+              </div>
+            </div>
+            <div class="">
+              <p><span>What:</span> Hold Open House</p>
+              <p><span>Where:</span> 123 Maple Street, Plymouth</p>
+              <p><span>When:</span> 31 Jan 2018</p>
+              <div class="ratingDiv">
+                <p>Rating</p>
+                <div class="rating">
+                  <span><img src="../assets/imgs/full-red.png" alt=""></span>
+                  <span><img src="../assets/imgs/full-red.png" alt=""></span>
+                  <span><img src="../assets/imgs/full-red.png" alt=""></span>
+                  <span><img src="../assets/imgs/full-red.png" alt=""></span>
+                  <span><img src="../assets/imgs/full-gray.png" alt=""></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sarBlock">
+            <div class="rowD">
+              <div class="left">
+                <p><span>Status:</span> <span class="c_orange">Completed</span></p>
+                <p>Posted: 17 Jan 2017</p>
+              </div>
+              <div class="right">
+                <p>Compensation :</p>
+                <h4>$100</h4>
+              </div>
+            </div>
+            <div class="">
+              <p><span>What:</span> Hold Open House</p>
+              <p><span>Where:</span> 123 Maple Street, Plymouth</p>
+              <p><span>When:</span> 31 Jan 2018</p>
+              <div class="ratingDiv">
+                <p>Rating</p>
+                <div class="rating">
+                  <span><img src="../assets/imgs/full-red.png" alt=""></span>
+                  <span><img src="../assets/imgs/full-red.png" alt=""></span>
+                  <span><img src="../assets/imgs/full-red.png" alt=""></span>
+                  <span><img src="../assets/imgs/full-red.png" alt=""></span>
+                  <span><img src="../assets/imgs/full-gray.png" alt=""></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </ion-item>
+      </ion-list>
+      <ion-list *ngSwitchCase="'myrequests'">
+        <ion-item>
+          <div class="sarBlock">
+            <div class="rowD">
+              <div class="left">
+                <p><span>Status:</span> <span class="c_orange">Completed</span></p>
+                <p>Posted: 17 Jan 2017</p>
+              </div>
+              <div class="right">
+                <p>Compensation :</p>
+                <h4>$100</h4>
+              </div>
+            </div>
+            <div class="">
+              <p><span>What:</span> Hold Open House</p>
+              <p><span>Where:</span> 123 Maple Street, Plymouth</p>
+              <p><span>When:</span> 31 Jan 2018</p>
+              <div class="ratingDiv">
+                <p>Rating</p>
+                <div class="rating">
+                  <span><img src="../assets/imgs/full-red.png" alt=""></span>
+                  <span><img src="../assets/imgs/full-red.png" alt=""></span>
+                  <span><img src="../assets/imgs/full-red.png" alt=""></span>
+                  <span><img src="../assets/imgs/full-red.png" alt=""></span>
+                  <span><img src="../assets/imgs/full-gray.png" alt=""></span>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+        </ion-item>
+      </ion-list>
+    </div>
+  </ion-content>

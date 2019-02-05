@@ -1,0 +1,63 @@
+<!--
+  Generated template for the LoginPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<!-- <ion-header>
+
+  <ion-navbar>
+    <ion-title>login</ion-title>
+  </ion-navbar>
+
+</ion-header> -->
+
+
+<ion-content padding  class="loginBg">
+      <div class="logo">
+        <img src="assets/imgs/logo.png" alt="">
+      </div>
+
+      <div class="loginFrmSection">
+        <div class="inputBox">
+            <h4>Sign In</h4>
+            <ion-item>
+               <ion-label  stacked>
+                 <div>
+                     Email <span class="blackTxt" > (phone for mobile accounts)</span>
+                 </div>
+                </ion-label>
+               <ion-input type="text"  [(ngModel)]='User.UserLogin' name="UserLogin" placeholder=""></ion-input>
+               <ion-label class="userIcon"> </ion-label>
+             </ion-item>
+             <ion-item>
+                <ion-label  stacked>
+                  <div><span class="blackTxt">MTW </span> Password</div>
+                  <div class="forgotPass" (click)="forgotPassword()">Forgot your passwod?</div>
+                </ion-label>
+                <ion-input type="password" placeholder="" [(ngModel)]='User.UserPassword' name="UserLogin" ></ion-input>
+                <ion-label class="passwordIcon"></ion-label>
+              </ion-item>
+        </div>
+        <div class="inputBottomSection">
+            <button class="greenBtn" (click)="onSignIn()">Sign In</button>
+            <div  class="check_Box">
+                <ion-item>
+                    <ion-label>Keep me signed in. </ion-label>
+                    <ion-checkbox [(ngModel)]="KeepLogIn" value="1"></ion-checkbox>
+                  </ion-item>
+            </div>
+
+
+              <p class="newTo">New to MyTeamwerks?</p>
+              <button class="orangeBtn" (click)="registration()">Create your account</button>
+              <div class="bottomSection">
+                  <span>Conditions of Use </span>
+                  <span>Privacy Notice</span>
+                  <span>Help</span>
+                </div>
+        </div>
+
+
+      </div>
+</ion-content>

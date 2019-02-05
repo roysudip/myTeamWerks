@@ -1,0 +1,210 @@
+page-message {
+    .topVarification{
+        margin-bottom: 20px;
+        h4{
+            color: #021262;
+            margin: 0;
+            font-family: 'OpenSansSemiBold';
+            font-size: 18px;
+            margin-bottom: 7px;
+        }
+        p{
+            color: #030f4a;
+            font-family: 'OpenSansSemiBold';
+            margin: 0;
+        }
+    }
+
+    ul{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        li{
+            // width: 90%;
+            margin-bottom: 15px;
+        }
+        .liInner{
+            position: relative;
+            display: flex;
+            display: -webkit-flex;
+            border: 1px solid #d5d5d5;
+            padding: 10px;
+        }
+        .liInner:before{
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-size: cover;
+            
+        }
+     
+    }
+   
+    .getMessage{
+        display: flex;
+        justify-content: flex-start;
+        .liInner{
+            background-color: #d5fcff;
+            border-radius: 0 10px 10px 10px;
+            margin-left: 20px;
+            width: 80%;
+            
+        }
+        .liInner:before{
+            left: -19px;
+            top: -1px;
+            background-image: url(../assets/imgs/getIcon.png);
+        }
+    }
+    .sendMessage{
+        display: flex;
+        justify-content: flex-end;
+        .liInner{
+            background-color: #ebebeb;
+            border-radius: 10px 0px 10px 10px;
+            margin-right: 20px;
+            width: 80%;
+        }
+        .liInner:before{
+            right: -19px;
+            top: -1px;
+            background-image: url(../assets/imgs/sendIcon.png);
+        }
+    }
+
+    .imgDiv{
+        flex: 0 0 20%;
+    }
+
+    .textDiv{
+        flex: 0 0 80%;
+        padding-left: 10px;
+        h6{
+            color: #1f1f1f;
+            font-family: 'OpenSansSemiBold';
+            font-size: 14px;
+            margin-bottom: 2px;
+        }
+        p{
+            color: #858585;
+            font-family: 'OpenSansRegular';
+            font-size: 13px;
+            margin: 0;
+            margin-bottom: 10px;
+        }
+        span{
+            display: inline-block;
+            font-size: 12px;
+            color: #636ea4;
+        }
+       
+    }
+
+
+    .textArea{
+        .item{
+            padding-left: 0;
+            padding: 16px;
+            padding-top: 0;
+            position: relative;
+        }
+        .text-input{
+            border: 1px solid #d5d5d5;
+            margin: 0;
+            width: 100%;
+            padding-left: 10px;
+            padding-top: 10px;
+            padding-right: 40px;
+            border-radius: 5px;
+            font-family: 'OpenSansRegular';
+            font-size: 14px;
+        }
+        .item-md.item-block .item-inner{
+            border-bottom: 0;
+        }
+        .item-md.item-input.item-input-has-focus .item-inner, .item-md.item-input.input-has-focus .item-inner{
+            box-shadow: none;
+
+        }
+        .item-md.item-block .item-inner{
+            padding-right: 0;
+        }
+        .sendBtn{
+            position: absolute;
+            width: 45px;
+            height: 45px;
+            background-image: url(../assets/imgs/sendBtn.png);
+            background-size: cover;
+            right: 15px;
+            margin: 0;
+            top: 3px;
+        }
+       
+    }
+    .header-md::after, .tabs-md[tabsPlacement="top"] > .tabbar::after, .footer-md::before, .tabs-md[tabsPlacement="bottom"] > .tabbar::before{
+        background-image: none;
+    }
+
+
+
+
+
+	@media(min-width:768px) {
+        .topVarification {
+            margin-bottom: 44px;
+            h4{
+                font-size: 30px;
+                margin-bottom: 15px;
+            }
+            p{
+                font-size: 30px;
+            }
+        }
+
+        .textDiv{
+            padding-left: 27px;
+            h6{
+                font-size: 24px;
+                margin-bottom: 7px;
+            }
+            p{
+                font-size: 20px;
+                margin-bottom: 26px;
+            }
+            span{
+                font-size: 20px;
+            }
+        }
+
+        .getMessage .liInner {
+            padding: 15px;
+        }
+        .sendMessage .liInner {
+            padding: 15px;
+        }
+        ul li{
+            margin-bottom: 20px;
+        }
+        .textArea .text-input{
+            height: 100px;
+            font-size: 22px;
+            padding-right: 80px;
+        }
+
+       .textArea .sendBtn {
+            width: 70px;
+            height: 70px;
+            right: 30px;
+            top: 16px;
+            
+        }
+
+	}
+
+
+
+
+
+    
+}

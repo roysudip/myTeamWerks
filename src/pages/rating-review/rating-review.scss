@@ -1,0 +1,107 @@
+page-rating-review {
+    .topSection{
+        margin-bottom: 20px;
+        background-color: #ebebeb;
+        padding: 10px;
+        border: 1px solid #d5d5d5;
+        border-radius: 10px;
+
+        .status{
+            display: flex;
+            display: -webkit-flex;
+            font-size: 13px;
+            span{
+                display: inline-block;
+                color: #282828;
+                
+                font-family: 'OpenSansBold';
+                margin-right: 5px;
+            }
+          
+        }
+        .compensation{
+            color: #1a1a1a;
+            font-family: 'OpenSansRegular';
+            margin: 0;
+        }
+        .compensation.assist{
+            color: #005fc1;
+        }
+
+    }
+
+    .rating {
+        text-align: left;
+    }
+    
+
+    .bottomSection{
+        padding-bottom: 15px;
+        h5{
+            color: #021262;
+            font-family: 'OpenSansSemiBold';
+            font-size: 16px;
+        }
+        .item{
+            padding-left: 0;
+        }
+        ion-textarea{
+            border: 1px solid #d5d5d5;
+            font-size: 14px;
+            height: 70px;
+            border-radius: 10px;
+            font-size: 14px;
+            font-family: 'OpenSansRegular';
+            padding-left: 10px;
+        }
+        .item-inner{
+            border-bottom: 0!important;
+        }
+        .item-md.item-input.item-input-has-focus .item-inner, .item-md.item-input.input-has-focus .item-inner{
+            box-shadow: none;
+        }
+    }
+
+    .ratingDiv{
+        padding-bottom: 10px;
+    }
+
+    
+    
+
+
+
+    @media(min-width:768px){
+        .topSection{
+            margin-bottom: 40px;
+            padding: 40px;
+            
+            .status{
+                font-size: 24px;
+                margin-bottom: 8px;
+            }
+        } 
+
+        .bottomSection{
+            padding-bottom: 60px;
+            h5{
+                font-size: 30px;
+                margin-bottom: 18px;
+            }
+        }
+        .bottomSection{
+            ion-textarea {
+                height: 220px;
+                font-size: 20px;
+                padding-left: 20px;
+                padding-top: 20px;
+            }
+           
+        }
+
+        .ratingDiv {
+            padding-bottom: 23px;
+        }
+     
+    }
+}

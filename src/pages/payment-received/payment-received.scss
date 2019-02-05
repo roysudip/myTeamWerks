@@ -1,0 +1,140 @@
+page-payment-received {
+    .rowD{display:flex; justify-content: space-between; margin-bottom: 5px;}
+	.status{color:#050505; font-size: 13px;margin-bottom: 8px;
+		span{
+			color: #04a800;
+			display: inline-block;
+		}
+	}
+	.posted{color:#1a1a1a;font-size: 13px;}
+	.leftDiv{padding-right: 15px;}
+	.rightDiv{
+		padding-left: 15px;
+		span{
+			display: block;
+			color: #021262;
+			font-family: 'OpenSansBold';
+			font-size: 16px;
+		}
+	}
+
+	.darkBox{
+		display: flex;
+		background-color: #444447;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		-ms-border-radius: 5px;
+		-o-border-radius: 5px;
+		border-radius: 5px;
+		justify-content: center; align-items: center;
+		padding: 30px;
+		margin-bottom: 15px;
+		flex-direction:column;
+
+		p{margin: 0; color:#fff; font-family: 'OpenSansRegular';}
+		h1{margin: 0; color:#fff; font-family: 'OpenSansBold';}
+		p.t_p_m{text-transform: uppercase; font-size: 16px;}
+		h1.amount{font-size: 26px; }
+		p.t_d{font-size: 14px;}
+	}
+
+
+
+
+.sarBlock{
+		background-color: #ebebeb;
+		border: 1px solid #d5d5d5;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		-ms-border-radius: 5px;
+		-o-border-radius: 5px;
+		border-radius: 5px;
+		padding: 15px 10px;
+		margin-bottom: 15px;
+		
+
+		
+
+		p{font-size: 13px; font-weight: 400; margin: 0;padding-bottom: 5px; color:#000; font-family: 'OpenSansRegular';
+		// span{font-family: 'OpenSansBold';}
+		}
+		h4{margin: 0;color:#021262; font-family: 'OpenSansBold';}
+		p.by{
+			color:#636ea4;
+		}
+
+        }
+        
+        .greenBtn{
+            margin-top: 40px;
+        }
+
+        .PaymentMade{
+            padding: 16px;
+        }
+
+        .segment-md .segment-button,
+        .segment-ios .segment-button{
+            color: #021162;
+            font-family: 'OpenSansSemiBold';
+        }
+        .segment-md .segment-button.activated, .segment-md .segment-button.segment-activated,
+        .segment-ios .segment-button.activated, .segment-ios .segment-button.segment-activated{
+            background-color: #021162;
+            color:#fff;
+            border-color:transparent;
+            font-family: 'OpenSansSemiBold';
+        }
+
+
+		@media(min-width:768px){
+		.sarBlock{
+		
+		-webkit-border-radius: 10px;
+		-moz-border-radius: 10px;
+		-ms-border-radius: 10px;
+		-o-border-radius: 10px;
+		border-radius: 10px;
+		padding: 30px 30px;
+		margin-bottom: 30px;
+		
+
+		.left{padding-right: 30px;}
+		
+		p{font-size: 24px;padding-bottom: 10px; 
+		
+		}
+		h4{font-size: 38px;}
+	}
+	.status{color:#04a800; font-size: 24px;}
+	.posted{color:#636ea4;font-size: 24px;}
+
+	.darkBox{
+		
+		-webkit-border-radius: 10px;
+		-moz-border-radius: 10px;
+		-ms-border-radius: 10px;
+		-o-border-radius: 10px;
+		border-radius: 10px;
+		padding: 30px;
+		margin-bottom:30px;
+		
+		
+		p.t_p_m{font-size: 28px;}
+		h1.amount{font-size: 60px; }
+		p.t_d{font-size: 20px;}
+    }
+    
+
+    .segment-md .segment-button,
+    .segment-ios .segment-button{
+        height: 66px;
+        font-size: 27px;
+        line-height: 62px;
+    }
+    .PaymentMade{
+        padding: 30px;
+    }
+		
+}
+}

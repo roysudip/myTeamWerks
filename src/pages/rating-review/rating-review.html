@@ -1,0 +1,49 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Rating Review</ion-title>
+    <span class="nitification_icon" (click)="notification()"></span>
+
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <div class="topSection">
+     
+          <div class="status">
+              <span>What:</span>
+              <p class="compensation"> Visiting To a Luxury Place</p>
+          </div>
+          <div class="status">
+              <span>Where:</span>
+              <p class="compensation"> 9786 E. Pleasant Court,Oak Ridge</p>
+          </div>
+          <div class="status">
+              <span>Assisting Agent: </span>
+              <p class="compensation assist">Bill Smith </p>
+          </div>
+        </div>
+
+      <div class="bottomSection">
+          <h5>Your Rating</h5>
+          <div class="ratingDiv">
+            <div class="rating">
+              <span><img src="../assets/imgs/full-red.png" alt=""></span>
+              <span><img src="../assets/imgs/full-red.png" alt=""></span>
+              <span><img src="../assets/imgs/full-red.png" alt=""></span>
+              <span><img src="../assets/imgs/full-red.png" alt=""></span>
+              <span><img src="../assets/imgs/full-gray.png" alt=""></span>
+            </div>
+          </div> 
+          <ion-item>
+            <ion-textarea placeholder="Optional Comment"></ion-textarea>
+          </ion-item>
+      </div>
+
+          <button class="greenBtn" (click)="myServiceRequestPage()">Submit</button>
+      
+ 
+</ion-content>

@@ -1,0 +1,75 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Dashboard</ion-title>
+    <span class="nitification_icon" (click)="notification()"></span>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+      <ul class="dashBoardUl">
+        <li (click)="reqService()">
+          <div class="imgDiv reqService"></div>
+          <div class="txtDiv">Request Service</div>
+        </li>
+        <li (click)="ServiceAssistanceRequestPage()">
+          <div class="imgDiv provideService"></div>
+          <div class="txtDiv">Provide Service</div> 
+        </li>
+        <li (click)="myServiceReq()">
+          <div class="imgDiv myReq"></div>
+          <div class="txtDiv">My Requests</div>
+        </li>
+        <li (click)="myAppointment()">
+          <div class="imgDiv myAppontment" ></div>
+          <div class="txtDiv">My Appointments</div>
+        </li>
+
+
+
+        <li>
+          <div class="imgDiv message" (click)="MessagePage()"></div>
+          <div class="txtDiv">Messages/Responses</div>
+        </li>
+        <li (click)="PaymentReceivedPage()">
+          <div class="imgDiv myEarning"></div>
+          <div class="txtDiv">My Earnings</div>
+        </li>
+        <li (click)="contactUsPage()">
+          <div class="imgDiv contactUs" ></div>
+          <div class="txtDiv">Contact Us</div>
+        </li>
+        <li (click)="aboutUsPage()">
+          <div class="imgDiv aboutUs" ></div>
+          <div class="txtDiv">About Us</div>
+        </li>
+        <li>
+          <div class="imgDiv relocaTion"></div>
+          <div class="txtDiv">Referrals/Relocations</div>
+        </li>
+        <li>
+          <div class="imgDiv shareApp"></div>
+          <div class="txtDiv">Share this App</div>
+        </li>
+      </ul>
+
+      <!-- <button style="padding:10px" (click)="login()">Login page</button>   
+      <button style="padding:10px" (click)="howItWorksPage()">How it works</button>  -->
+
+
+
+      <!-- <button style="padding:10px" (click)="OfferedPricePage()">Offered</button>  -->
+
+
+
+
+      
+        
+      
+
+
+
+
+</ion-content>

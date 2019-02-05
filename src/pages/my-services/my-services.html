@@ -1,0 +1,96 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>My Appointments</ion-title>
+    <span class="nitification_icon" (click)="notification()"></span>
+
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <div class="parentSarBlock">
+    <div class="grayBlock">
+      
+        <p><span>What:</span> Hold Open House</p>
+        <p><span>Where:</span> 123 Maple Street, Plymouth</p>
+        <div class="rowD">
+          <div>
+            <p><span>When:</span> 31 Jan 2018</p>
+          </div>
+          <div>
+            <p class="status"><span>Status:</span> Pending</p>
+          </div>
+        </div>
+      
+    </div> 
+    <div class="whiteBlock"> 
+      <div class="rowD">
+        <div class="col-">
+          <p class="pricing">Main Price: <span>$100</span></p>
+        </div>
+        <div>
+          <p class="pricing">Final Price: <span>$200</span></p>
+        </div>
+      </div>
+      <div class="vcb">
+        <button class="greenBtn" (click)="JobCompleteOtpPage()">complete</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="parentSarBlock">
+    <div class="grayBlock">
+      
+        <p><span>What:</span> Luxury House Booking</p>
+        <p><span>Where:</span> 45 Main Street, Plymouth</p>
+        <div class="rowD">
+          <div>
+            <p><span>When:</span> 2 Feb 2018</p>
+          </div>
+          <div>
+            <p class="status"><span>Status:</span> Completed</p>
+          </div>
+        </div>
+      
+    </div>
+    <div class="whiteBlock">
+      <div class="rowD">
+        <div class="col-">
+          <p class="pricing">Main Price: <span>$300</span></p>
+        </div>
+        <div>
+          <p class="pricing">Final Price: <span>$500</span></p>
+        </div>
+      </div>
+     
+    </div>
+  </div>
+
+  <div class="parentSarBlock">
+    <div class="grayBlock">
+      
+        <p><span>What:</span> Property Checking</p>
+        <p><span>Where:</span> 58 Market Street , Des Plaines</p>
+        <div class="rowD">
+          <div>
+            <p><span>When:</span> 27 Jan 2018</p>
+          </div>
+          <div>
+            <p class="status"><span>Status:</span> Approval pending</p>
+          </div>
+        </div>
+      
+    </div>
+    <div class="whiteBlock">
+      <div class="rowD">
+        <div class="col-">
+          <p class="pricing">Main Price: <span>$200</span></p>
+        </div>
+        <div>
+          <p class="pricing">Final Price: <span>$600</span></p>
+        </div>
+      </div>
+      <div class="vcb">
+        <button class="orangeBtn" (click)="dashboardPage()">Cancel</button> 
+      </div>
+    </div>
+  </div>
+</ion-content>

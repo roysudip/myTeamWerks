@@ -1,0 +1,93 @@
+<!--
+  Generated template for the RequestServicePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Request Service</ion-title>
+    <span class="nitification_icon" (click)="notification()"></span>
+
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+      <div class="reqService">
+          <div class="inputBox">
+              <ion-item>
+                  <ion-input type="text"  placeholder="Service Assistant"  [(ngModel)]='RequestService.serviceAssistantType' name="serviceAssistantType"></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-label class="calender"></ion-label>
+                    <ion-datetime placeholder="Date" displayFormat="MM/DD/YYYY" [(ngModel)]='RequestService.date' name="date"></ion-datetime>
+                  </ion-item>
+                  <ion-item>
+                  <ion-label class="calender"></ion-label>
+                      <ion-datetime placeholder="Time" displayFormat="hh:mm A" [(ngModel)]='RequestService.time' name="time"></ion-datetime>
+                    </ion-item>
+              <ion-item>
+                 <ion-input type="number"  placeholder="Price" [(ngModel)]='RequestService.price' name="price"></ion-input>
+               </ion-item>
+               <ion-item>
+                  <ion-input type="text" placeholder="Name of Client" [(ngModel)]='RequestService.clientName' name="clientName"></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-input type="tel" placeholder="Client’s Mobile Number" [(ngModel)]='RequestService.clientMobileNo' name="clientMobileNo"></ion-input>
+                  </ion-item>
+                  <ion-item>
+                      <ion-input type="email" placeholder="Client’s Email" [(ngModel)]='RequestService.clientEmail' name="clientEmail" ></ion-input>
+                    </ion-item>
+
+                    <ion-item>
+                        <ion-textarea placeholder="Additional Information" [(ngModel)]='RequestService.additionalInfo' name="additionalInfo"></ion-textarea>
+                      </ion-item>
+
+
+                    <ion-item>
+                        <ion-input type="text"  placeholder="Subject Property Street Address" [(ngModel)]='RequestService.street' name="street"></ion-input>
+                      </ion-item>
+                      <ion-item>
+                         <ion-input type="text" placeholder="Subject Property City" [(ngModel)]='RequestService.city' name="city"></ion-input>
+                       </ion-item>
+                       <ion-item>
+                           <ion-input type="text" placeholder="Subject Property State"  [(ngModel)]='RequestService.state' name="state"></ion-input>
+                         </ion-item>
+                         <ion-item>
+                             <ion-input type="text" placeholder="Subject Property Zip Code" [(ngModel)]='RequestService.zipCode' name="zipCode"></ion-input>
+                           </ion-item>
+
+                           <div class="radioWrapper">
+                              <p>Choose agent offices which will get this
+                                  request</p>
+                                  <div class="radioBtn">
+                                      <ion-list radio-group [(ngModel)]='RequestService.requestForAll' name="requestForAll">
+                                          <ion-item>
+                                            <ion-label>All</ion-label>
+                                            <ion-radio value="true" checked></ion-radio>
+                                          </ion-item>
+                                          <ion-item>
+                                            <ion-label>Only My Office/Brokerage</ion-label>
+                                            <ion-radio value="false"></ion-radio>
+                                          </ion-item>
+                                        </ion-list>
+                                  </div>
+
+                           </div>
+                           <ion-item>
+                              <ion-select [(ngModel)]='RequestService.gender' name="gender" class="selectDropdown" placeholder="Agent Gender">
+                                <ion-option value="female">Male</ion-option>
+                                <ion-option value="male">Female</ion-option>
+                              </ion-select>
+                            </ion-item>
+
+
+          </div>
+      <button class="greenBtn" (click)="AddRequestService()">Send Request</button>
+
+      </div>
+
+</ion-content>
